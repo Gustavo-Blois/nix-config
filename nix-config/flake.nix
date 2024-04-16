@@ -11,7 +11,13 @@
     nixosConfigurations.Sol = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
-        ./configuration.nix
+        ./Sol/configuration.nix
+      ];
+    };
+    nixosConfigurations.Lua = nixpkgs.lib.nixosSystem {
+      system = "x86_64-linux";
+      modules = [
+        ./Lua/configuration.nix
       ];
     };
   };
