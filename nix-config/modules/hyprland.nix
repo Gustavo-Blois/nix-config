@@ -1,7 +1,6 @@
 {pkgs, ...}: 
 {
   programs.hyprland = {
-    enableNvidiaPatches = true;
     enable = true;
     xwayland.enable = true;
   };
