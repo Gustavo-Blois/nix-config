@@ -11,9 +11,7 @@
   in{
   wayland.windowManager.hyprland = {
     enable = true;
-    settings = {
-      exec-once = ''${startupScript}/bin/start'';
-    };
+    extraConfig = ''exec-once = ${startupScript}/bin/start '';
   };
 
   }
