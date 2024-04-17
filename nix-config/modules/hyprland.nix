@@ -1,8 +1,21 @@
-{pkgs, ...}: 
+{inputs, pkgs, ...}: 
 {
-  programs.hyprland = {
+
+  let
+    startupScript = pkgs.pkgs.writeShellScriptBin "start" ''
+    swww init &
+    sleep 1
+    swww img ~/Wallpapers/1
+    nm-applet --indicator &
+    eww &
+    dunst
+    ''
+  in{
+  wayland.windowManager.hyprland = {
     enable = true;
-    xwayland.enable = true;
+    settings = {
+      exec-once = ''${startupScript}/bin/start''
+    }
   };
 
 
@@ -17,4 +30,5 @@
     enable = true;
     extraPortals = [pkgs.xdg-desktop-portal-gtk];
   };
+  }
 }
