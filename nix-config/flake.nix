@@ -27,6 +27,7 @@
         specialArgs = {inherit inputs system; };
         modules = [
           ./Sol/configuration.nix
+          inputs.home-manager.nixosModules.home-manager
         ];
       };
       nixosConfigurations.Lua = nixpkgs.lib.nixosSystem {

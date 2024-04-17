@@ -7,8 +7,6 @@
 {
   imports =
     [ # Include the results of the hardware scan.
-      ../modules/hyprland.nix
-      inputs.home-manager.nixosModules.home-manager
       ./hardware-configuration.nix
     ];
     home-manager = {
