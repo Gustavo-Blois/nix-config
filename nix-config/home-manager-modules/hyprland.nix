@@ -12,7 +12,6 @@
   xdg.configFile."hypr".source = ../dotfiles/hypr;
   wayland.windowManager.hyprland = {
     enable = true;
-    enableNvidiaPatches = true;
     extraConfig = ''exec-once = ${startupScript}/bin/start '';
   };
 

@@ -8,14 +8,15 @@
   imports =
     [ 
       inputs.home-manager.nixosModules.home-manager
-      ../modules/hyprland.nix
+      ../nixos-modules/xdg.nix
+      ../nixos-modules/hyprland.nix
       ./hardware-configuration.nix
     ];
 
     home-manager = {
       extraSpecialArgs = {inherit inputs; };
       users = {
-        mason = import ../modules/home.nix;
+        mason = import ../home-manager-modules/home.nix;
       };
     };
 
