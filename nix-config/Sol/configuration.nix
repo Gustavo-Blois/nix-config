@@ -2,14 +2,21 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ inputs, config, pkgs, ... }:
 
 {
   imports =
     [ # Include the results of the hardware scan.
       ../modules/hyprland.nix
+      inputs.home-manager.nixosModules.home-manager
       ./hardware-configuration.nix
     ];
+    home-manager = {
+      extraSpecialArgs = {inherit inputs; };
+      users = {
+        mason = import ./home.nix;
+      };
+    };
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
