@@ -1,5 +1,5 @@
 {inputs, pkgs, ...}: 
 {
   programs.neovim.enable = true;
-  xdg.configFile.nvim.source = "../dotfiles/nvim";
-}
+  home.file.".config/eww".source = ../dotfiles/nvim;
+  }

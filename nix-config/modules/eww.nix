@@ -1,5 +1,5 @@
 {inputs, pkgs, ...}: 
 {
   programs.eww.enable = true;
-  xdg.configFile.eww.source = "../dotfiles/eww";
+  home.file.".config/eww".source = ../dotfiles/eww;
 }
