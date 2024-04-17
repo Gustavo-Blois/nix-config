@@ -4,7 +4,7 @@
   imports = [
     ./hyprland.nix
     ./nvim.nix
-    ./eww.nix
+  #  ./eww.nix
     ./dunst.nix
     ./kitty.nix
     ./rofi.nix
