@@ -6,7 +6,6 @@
     xwayland.enable = true;
   };
 
-  hardware.nvidia.modesetting.enable = true;
 
   environment.systemPackages = with pkgs; [
     eww

@@ -68,7 +68,7 @@
   };
 
 
-  
+  hardware.nvidia.modesetting.enable = true;
   environment.localBinInPath = true;
   services.flatpak.enable = true;
   nix.settings.experimental-features = ["nix-command" "flakes"];  
