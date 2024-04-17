@@ -162,7 +162,7 @@ fonts.packages = with pkgs; [
       inetutils      unzip      unixtools.xxd powertop btop tree bat eza fd ripgrep file  #mordern-unix
       arduino  
       audacity      wireshark      ghidra      pwntools
-      waybar    
+      swww waybar    
       haskellPackages.cabal-install      ghc
     ];
   };

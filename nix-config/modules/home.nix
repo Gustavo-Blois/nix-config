@@ -5,6 +5,9 @@
     ./hyprland.nix
     ./nvim.nix
     ./eww.nix
+    ./dunst.nix
+    ./kitty.nix
+    ./rofi.nix
   ];
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
