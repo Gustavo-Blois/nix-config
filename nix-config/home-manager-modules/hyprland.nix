@@ -11,8 +11,7 @@
   in{
   #xdg.configFile."hypr".source = ../dotfiles/hypr;
   wayland.windowManager.hyprland = {
-    enable = true;
     extraConfig = ''exec-once = ${startupScript}/bin/start '';
   };
 
-  }
+}
