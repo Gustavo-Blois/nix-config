@@ -7,7 +7,7 @@
 {
   imports =
     [ # Include the results of the hardware scan.
-      ./xdg.nix
+      ../modules/xdg.nix
       ./hardware-configuration.nix
     ];
     home-manager = {
