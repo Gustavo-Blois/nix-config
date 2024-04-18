@@ -33,6 +33,7 @@
       nixosConfigurations.Lua = nixpkgs.lib.nixosSystem {
         modules = [
           ./Lua/configuration.nix
+          inputs.home-manager.nixosModules.home-manager
         ];
       };
     
