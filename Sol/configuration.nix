@@ -3,22 +3,25 @@
 {
   imports =
     [ # Include the results of the hardware scan.
-      ../nixos-modules/waybar.nix
       ../nixos-modules/thunar.nix
       ../nixos-modules/hyprland.nix
-      ../nixos-modules/xdg.nix
+      ../nixos-modules/audio.nix
+      ../nixos-modules/fonts.nix
+      ../nixos-modules/misc.nix
+      ../nixos-modules/packages/entertainment.nix
+      ../nixos-modules/packages/h_tools.nix
+      ../nixos-modules/packages/utils.nix
+      ../nixos-modules/packages/programming.nix
+
       ./hardware-configuration.nix
     ];
     home-manager = {
       extraSpecialArgs = {inherit inputs; };
       users = {
-        mason = import ../home-manager-modules/home.nix;
+        mason = import ../home.nix;
       };
     };
 
-  # Bootloader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
 
   networking.hostName = "Sol"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -63,42 +66,15 @@
     description = "mason";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
-    spotify      
-    firefox brave 	
-    p7zip
-    vscode
-    valgrind
-    git
+
     ];
   };
 
 
   hardware.nvidia.modesetting.enable = true;
-  environment.localBinInPath = true;
-  services.flatpak.enable = true;
   nix.settings.experimental-features = ["nix-command" "flakes"];  
-  programs.direnv.enable = true;
-  security.rtkit.enable = true;
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-    # If you want to use JACK applications, uncomment this
-    #jack.enable = true;
-  };
-
-  
 
 
-  hardware.pulseaudio.enable = false;
-
-  nixpkgs.config.allowUnfree = true;
-
-  environment.systemPackages = with pkgs; [
-    swww
-    home-manager
-  ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
