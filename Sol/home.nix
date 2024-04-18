@@ -2,11 +2,11 @@
 
 {
   imports = [
-    ./home-manager-modules/hyprland.nix
-    ./home-manager-modules/nvim.nix
-    ./home-manager-modules/dunst.nix
-    ./home-manager-modules/kitty.nix
-    ./home-manager-modules/rofi.nix
+    ../home-manager-modules/hyprland-sol.nix
+    ../home-manager-modules/nvim.nix
+    ../home-manager-modules/dunst.nix
+    ../home-manager-modules/kitty.nix
+    ../home-manager-modules/rofi.nix
   ];
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
