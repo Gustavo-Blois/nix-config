@@ -3,7 +3,7 @@
   environment.systemPackages = with pkgs; [
     git github-desktop
     ghc
-    valgrind gcc
+    valgrind gcc gnumake
     neovim vscode
   ];
 }
