@@ -2,7 +2,7 @@
 {
   environment.systemPackages = with pkgs; [
     git github-desktop
-    ghc
+    ghc haskell-language-server
     valgrind gcc gnumake
     neovim vscode
   ];
