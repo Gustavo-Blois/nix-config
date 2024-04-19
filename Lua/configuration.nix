@@ -40,13 +40,7 @@
   # Enable sound with pipewire.
 
 
-  #####
-#  programs.steam = {
-#    enable = true;
-#    remotePlay.openFirewall = true;
-#    dedicatedServer.openFirewall = true;
 
-#  };
 
 services.auto-cpufreq.enable = true;
 services.auto-cpufreq.settings = {
@@ -60,7 +54,7 @@ services.auto-cpufreq.settings = {
   };
 };
 
-
+services.xserver.displayManager.lightdm.enable = false;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.mason = {

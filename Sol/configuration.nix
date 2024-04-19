@@ -12,7 +12,6 @@
       ../nixos-modules/packages/h_tools.nix
       ../nixos-modules/packages/utils.nix
       ../nixos-modules/packages/programming.nix
-
       ./hardware-configuration.nix
     ];
     home-manager = {
