@@ -24,7 +24,7 @@
 
     in 
     {
-      overlays = import ./overlays {inherit inputs};
+      overlays = import ./overlays {inherit inputs;};
       nixosConfigurations.Sol = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs system; };
         modules = [
