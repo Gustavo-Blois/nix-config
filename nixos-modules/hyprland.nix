@@ -4,8 +4,8 @@
   environment.systemPackages = with pkgs; [
     kitty
     wofi
-    hyprpaper
     eww
+    swww
     home-manager
   ];
   programs.waybar.enable = true;
