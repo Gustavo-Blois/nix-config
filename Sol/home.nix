@@ -4,7 +4,6 @@
   imports = [
     ../home-manager-modules/hyprland-sol.nix
     ../home-manager-modules/dunst.nix
-    ../home-manager-modules/kitty.nix
     ../home-manager-modules/misc.nix
 
   ];

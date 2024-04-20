@@ -2,8 +2,9 @@
 {
   programs.hyprland.enable = true;
   environment.systemPackages = with pkgs; [
+    kitty
     wofi
-    swww
+    hyprpaper
     eww
     home-manager
   ];
