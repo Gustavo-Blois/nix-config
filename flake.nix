@@ -26,13 +26,14 @@
     {
       overlays = import ./overlays {inherit inputs;};
       nixosConfigurations.Sol = nixpkgs.lib.nixosSystem {
-        specialArgs = {inherit inputs system; };
+        specialArgs = {inherit inputs outputs system; };
         modules = [
           ./Sol/configuration.nix
           inputs.home-manager.nixosModules.home-manager
         ];
       };
       nixosConfigurations.d0gtooth = nixpkgs.lib.nixosSystem {
+        specialArgs = {inherit inputs outputs system; };
         modules = [
           ./Lua/configuration.nix
           inputs.home-manager.nixosModules.home-manager
