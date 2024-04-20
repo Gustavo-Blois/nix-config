@@ -5,7 +5,6 @@
     ../home-manager-modules/hyprland-lua.nix
     ../home-manager-modules/dunst.nix
     ../home-manager-modules/kitty.nix
-    ../home-manager-modules/rofi.nix
     ../home-manager-modules/misc.nix
   ];
   # Home Manager needs a bit of information about you and the paths it should
