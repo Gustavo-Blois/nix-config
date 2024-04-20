@@ -3,7 +3,8 @@
 
   inputs = {
     # NixOS official package source, using the nixos-23.11 branch here
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.11";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-23.11";
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -23,6 +24,7 @@
 
     in 
     {
+      overlays = import ./overlays {inherit inputs};
       nixosConfigurations.Sol = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs system; };
         modules = [
