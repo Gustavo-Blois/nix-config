@@ -1,4 +1,4 @@
-{ inputs, config, pkgs, ... }:
+{ inputs, outputs, config, pkgs, ... }:
 {
   nixpkgs.overlays = [outputs.overlays.stable-packages];
 
