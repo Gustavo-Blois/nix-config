@@ -17,7 +17,7 @@
       ../nixos-modules/packages/utils.nix
       ../nixos-modules/packages/programming.nix
 
-      ./hardware-configuration.nix
+       /etc/nixos/hardware-configuration.nix
     ];
 
     home-manager = {
@@ -31,7 +31,7 @@
 
   ####
   nix.settings.experimental-features = ["nix-command" "flakes"];
-  networking.hostName = "Lua"; # Define your hostname.
+  networking.hostName = "d0gtooth"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary

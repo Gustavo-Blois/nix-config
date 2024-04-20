@@ -3,7 +3,6 @@
 {
   imports = [
     ../home-manager-modules/hyprland-lua.nix
-    ../home-manager-modules/nvim.nix
     ../home-manager-modules/dunst.nix
     ../home-manager-modules/kitty.nix
     ../home-manager-modules/rofi.nix

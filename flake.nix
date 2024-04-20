@@ -30,7 +30,7 @@
           inputs.home-manager.nixosModules.home-manager
         ];
       };
-      nixosConfigurations.Lua = nixpkgs.lib.nixosSystem {
+      nixosConfigurations.d0gtooth = nixpkgs.lib.nixosSystem {
         modules = [
           ./Lua/configuration.nix
           inputs.home-manager.nixosModules.home-manager

@@ -12,7 +12,7 @@
       ../nixos-modules/packages/h_tools.nix
       ../nixos-modules/packages/utils.nix
       ../nixos-modules/packages/programming.nix
-      ./hardware-configuration.nix
+       /etc/nixos/hardware-configuration.nix
     ];
     home-manager = {
       extraSpecialArgs = {inherit inputs; };
