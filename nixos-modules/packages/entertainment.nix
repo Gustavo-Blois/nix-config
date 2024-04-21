@@ -1,4 +1,4 @@
-{ inputs, config, pkgs, ... }:
+{ inputs, lib, config, pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
     firefox brave
