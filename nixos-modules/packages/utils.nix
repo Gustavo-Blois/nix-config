@@ -7,6 +7,7 @@
     ventoy-full
     wine
     libcanberra
+    wl-clipboard
   ];
   services.flatpak.enable = true;
 
