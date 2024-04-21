@@ -28,7 +28,7 @@
     };
 
     writeShellApplication = {
-      name = "gyatt-flake"
+      name = "gyatt-flake";
       runtimeInputs = [ git ];
       text = ''
       git add . && git commit -m "commit flake" && git push && sudo nixos-rebuild switch --flake .#d0gtooth --impure
