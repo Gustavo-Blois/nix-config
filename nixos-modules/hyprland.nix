@@ -10,6 +10,7 @@
     playerctl
     stable.swww
     home-manager
+    hyprlock
   ];
   programs.waybar.enable = true;
 
