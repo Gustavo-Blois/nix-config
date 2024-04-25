@@ -9,6 +9,7 @@ programs = {
       syntaxHighlighting.enable = true;
       ohMyZsh = {
          enable = true;
+         theme = "obraun"
       };
    };
 };
