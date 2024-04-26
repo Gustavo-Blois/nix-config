@@ -5,7 +5,7 @@
   programs.hyprland.enable = true;
   environment.systemPackages = with pkgs; [
     kitty
-    wofi
+    rofi-wayland
     eww
     playerctl
     stable.swww
