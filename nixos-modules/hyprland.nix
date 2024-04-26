@@ -5,12 +5,14 @@
   programs.hyprland.enable = true;
   environment.systemPackages = with pkgs; [
     kitty
-    rofi-wayland
+    stable.rofi-wayland
     eww
     playerctl
     stable.swww
     home-manager
     hyprlock
+    grim
+    slurp
   ];
   programs.waybar.enable = true;
 

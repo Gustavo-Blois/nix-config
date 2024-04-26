@@ -6,6 +6,7 @@
   noto-fonts-emoji
   nerdfonts
   corefonts
+  jetbrains-mono
   liberation_ttf
   unifont
   unifont_upper
