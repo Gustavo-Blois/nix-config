@@ -6,6 +6,7 @@
   noto-fonts-emoji
   nerdfonts
   corefonts
+  iosevka
   jetbrains-mono
   liberation_ttf
   unifont
