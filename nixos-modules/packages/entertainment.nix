@@ -4,6 +4,7 @@
     firefox brave
     spotify
     discord
+    cavalier
   ];
 
    nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
