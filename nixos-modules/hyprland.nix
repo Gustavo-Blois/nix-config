@@ -5,11 +5,11 @@
   programs.hyprland.enable = true;
   environment.systemPackages = with pkgs; [
     kitty
+    stable.dunst
     stable.rofi-wayland
     eww
     playerctl
     stable.swww
-    home-manager
     hyprlock
     grim
     slurp

@@ -15,12 +15,7 @@
       ../nixos-modules/zsh.nix
        /etc/nixos/hardware-configuration.nix
     ];
-    home-manager = {
-      extraSpecialArgs = {inherit inputs; };
-      users = {
-        mason = import ./home.nix;
-      };
-    };
+
 
 
   networking.hostName = "Sol"; # Define your hostname.
