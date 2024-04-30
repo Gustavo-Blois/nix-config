@@ -20,13 +20,6 @@
        /etc/nixos/hardware-configuration.nix
     ];
 
-    home-manager = {
-      extraSpecialArgs = {inherit inputs; };
-      users = {
-        mason = import ./home.nix;
-      };
-    };
-
 
   ####
   nix.settings.experimental-features = ["nix-command" "flakes"];
@@ -64,7 +57,7 @@ services.xserver.displayManager.lightdm.enable = false;
 
     ];
   };
-  
+
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
