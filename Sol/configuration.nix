@@ -39,7 +39,7 @@
 
   hardware.nvidia.modesetting.enable = true;
   nix.settings.experimental-features = ["nix-command" "flakes"];  
-
+  services.xserver.displayManager.lightdm.enable = false;
 
 
   # Some programs need SUID wrappers, can be configured further or are
