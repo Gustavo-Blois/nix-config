@@ -6,6 +6,8 @@
     stremio
     discord
     cavalier
+    lutris wine 
+    gimp
   ];
 
    nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
