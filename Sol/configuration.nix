@@ -18,7 +18,7 @@
 
 
 
-  networking.hostName = "Sol"; # Define your hostname.
+  networking.hostName = "gr1mb0rk"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary
@@ -39,7 +39,7 @@
 
   hardware.nvidia.modesetting.enable = true;
   nix.settings.experimental-features = ["nix-command" "flakes"];  
-
+  services.xserver.displayManager.lightdm.enable = false;
 
 
   # Some programs need SUID wrappers, can be configured further or are
