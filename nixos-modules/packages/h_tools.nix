@@ -1,7 +1,7 @@
 { inputs, config, pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
-    ghidra
+    ghidra exiftool
     nmap
     nikto
     openvpn
