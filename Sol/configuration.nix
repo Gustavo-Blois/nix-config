@@ -25,15 +25,6 @@
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
  
-  xdg.portal = {
-    enable = true;
-    extraPortals = with pkgs; [ xdg-desktop-portal-gtk ];
-  };
-
-  environment.systemPackages = with pkgs; [
-    xdg-desktop-portal-gtk
-  ];
-
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.mason = {
     isNormalUser = true;
