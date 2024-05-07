@@ -15,9 +15,6 @@
 
   environment.systemPackages = with pkgs; [
     xdg-desktop-portal-gtk
-  ];
-}
-  environment.systemPackages = with pkgs; [
     kitty
     stable.dunst
     stable.rofi-wayland
