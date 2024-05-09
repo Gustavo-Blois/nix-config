@@ -13,11 +13,8 @@
   };
 
   environment.systemPackages = with pkgs; [
-<<<<<<< HEAD
     bash
-=======
     xdg-desktop-portal-gtk
->>>>>>> f728bdbb79539dccd8e42cc38acb5e006298ab88
     kitty
     stable.dunst
     stable.rofi-wayland
