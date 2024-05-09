@@ -4,6 +4,7 @@
 
   programs.hyprland.enable = true;
   environment.systemPackages = with pkgs; [
+    bash
     kitty
     stable.dunst
     stable.rofi-wayland
