@@ -13,7 +13,6 @@
   };
 
   environment.systemPackages = with pkgs; [
-    bash
     xdg-desktop-portal-gtk
     kitty
     stable.dunst
