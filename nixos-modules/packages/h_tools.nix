@@ -3,7 +3,7 @@
   environment.systemPackages = with pkgs; [
     ghidra exiftool
     nmap
-    nikto
+    nikto burpsuite
     openvpn
   ];
 }
