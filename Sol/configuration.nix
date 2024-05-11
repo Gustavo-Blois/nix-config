@@ -6,6 +6,7 @@
       ../nixos-modules/nvidia.nix
       ../nixos-modules/thunar.nix
       ../nixos-modules/hyprland.nix
+#      ../nixos-modules/plasma.nix
       ../nixos-modules/audio.nix
       ../nixos-modules/fonts.nix
       ../nixos-modules/misc.nix
