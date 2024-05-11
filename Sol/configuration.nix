@@ -3,6 +3,7 @@
 {
   imports =
     [ # Include the results of the hardware scan.
+      ../nixos-modules/nvidia.nix
       ../nixos-modules/thunar.nix
       ../nixos-modules/hyprland.nix
       ../nixos-modules/audio.nix
