@@ -7,7 +7,7 @@
     discord
     cavalier
     lutris wine 
-    gimp
+    gimp krita
   ];
 
    nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
