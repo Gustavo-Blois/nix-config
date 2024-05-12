@@ -15,6 +15,7 @@
       ../nixos-modules/packages/utils.nix
       ../nixos-modules/packages/programming.nix
       ../nixos-modules/zsh.nix
+      ../nixos-modules/wacom.nix
        /etc/nixos/hardware-configuration.nix
     ];
 
