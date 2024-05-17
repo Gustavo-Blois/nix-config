@@ -1,7 +1,7 @@
 { inputs, config, pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
-    ghidra exiftool
+    radare2 ghidra exiftool
     nmap
     nikto burpsuite
     openvpn
