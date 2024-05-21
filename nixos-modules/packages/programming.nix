@@ -5,5 +5,6 @@
     ghc haskell-language-server
     valgrind gcc gnumake
     neovim vscode
+    nix-init
   ];
 }
