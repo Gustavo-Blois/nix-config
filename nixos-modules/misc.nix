@@ -3,7 +3,7 @@
   xdg.portal = {
     enable = true;
   };
-  i18n.inputMethod.enabled = true;
+  i18n.inputMethod.enabled = "fcitx5";
   nixpkgs.config.allowUnfree = true;
   programs.direnv.enable = true;
   security.polkit.enable = true;
