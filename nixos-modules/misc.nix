@@ -3,7 +3,9 @@
   xdg.portal = {
     enable = true;
   };
+  
   i18n.inputMethod.enabled = "fcitx5";
+  i18n.inputMethod.fcitx5.addons = with pkgs; [ fcitx5-chinese-addons ];
   nixpkgs.config.allowUnfree = true;
   programs.direnv.enable = true;
   security.polkit.enable = true;
